@@ -18,8 +18,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
-	public static WebDriver driver;
-	public static Properties prop;
+	public  WebDriver driver;
+	public  Properties prop;
 
 	// reading url and browser from properties file
 
