@@ -67,14 +67,14 @@ public class BaseTest {
 
 		TakesScreenshot screenshot = ((TakesScreenshot) driver);
 		File srcfile = screenshot.getScreenshotAs(OutputType.FILE);
-		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+		File file = new File(System.getProperty("user.dir") + "/src/test/resources/screenshots/" + testCaseName + ".png");
 		try {
 			FileUtils.copyFile(srcfile, file);
 		} catch (IOException e) {
 
 			e.printStackTrace();
 		}
-		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+		return System.getProperty("user.dir") + "/src/test/resources/screenshots/" + testCaseName + ".png";
 	}
 
 	public void close() {
